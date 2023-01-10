@@ -165,7 +165,7 @@ tab_create_trajectories_return <- function(){
                     shiny::helpText("2. Determine the vertices of the trajectory by 'double - clicking' the position on the plot."),
                     shiny::HTML("<br>"),
                     shiny::helpText("3. Highlight or reset the trajectory by clicking the respective button below."),
-                    shiny::sliderInput("trajectory_width", label = "Determine width of trajectory", value = 20, min = 0.5, max = 100, step = 0.5),
+                    shiny::sliderInput("trajectory_width", label = "Determine width of trajectory", value = 400, min = 100, max = 1000, step = 50),
                     shiny::HTML("<br>"),
                     shiny::splitLayout(
                       shiny::actionButton("highlight_trajectory", label = "Highlight", width = "100%"),
