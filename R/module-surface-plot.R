@@ -884,7 +884,8 @@ moduleSurfacePlotServer <- function(id,
           segmentation_add_on() +
           ggplot2::coord_equal() +
           coords_add_on() +
-          legend_add_on()
+          legend_add_on() + 
+        xlim(2488,7464)
 
       })
 
